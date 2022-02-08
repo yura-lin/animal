@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <title>動物醫院</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="menu_text">
+        <ul>
+            <li><a href="#bt1">醫療團隊</a></li>
+            <li><a href="#bt2">門診時間</a></li>
+            <li><a href="#bt3">院內環境</a></li>
+            <li><a href="#bt4">聯絡資訊</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="banner">
+      <img src="images/banner.jpg" alt="">
+    </div>
+
+  <div id="bt1">
+    <div class="about">
+      <h2>醫療團隊</h2>
+      <div class="at">
+        <div class="item">
+          <img src="images/t1.jpg" alt="">
+          <h3>黃柏勳 獸醫師</h3>
+          <p>國立中興大學獸醫學系<br>康莊動物醫院</p>
+        </div>
+        <div class="item">
+          <img src="images/t2.jpg" alt="">
+          <h3>侯松佑 獸醫師</h3>
+          <p>國立中興大學獸醫學系<br>恩澤動物醫院<br>亞太動物醫院</p>
+        </div>
+        <div class="item">
+          <img src="images/t3.jpg" alt="">
+          <p>疫苗注射｜健康檢查｜一般內外科
+            <br>眼科｜心臟科｜肝膽腸胃科
+            <br>口腔與齒科｜腎臟與泌尿科
+            <br>神經科｜癌症與腫瘤醫學
+            <br>營養諮詢｜老年寵物醫學｜行為諮詢</p>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+  <div id="bt2">
+    <div class="time">
+      <h2>門診時間</h2>
+      <div class="tab">
+        <table class="tab-item">
+         <tr>
+           <th>門診時段</th>
+           <th>日</th>
+           <th>一</th>
+           <th>二</th>
+           <th>三</th>
+           <th>四</th>
+           <th>五</th>
+           <th>六</th>
+         </tr>
+         <tr>
+          <td>9:00-14:00</td>
+          <td>○</td>
+          <td>休診</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+         </tr>
+         <tr>
+          <td>15:00-21:00</td>
+          <td>○</td>
+          <td>休診</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+          <td>○</td>
+         </tr>
+        </table>
+        <h3>午休時段 14:00-15:00</h3>
+      </div>
+      <div class="tabpic">
+        <img src="images/tabpic.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div id="bt3">
+    <div class="products">
+      <h2>院內環境</h2>
+      <div class="pt">
+        <!-- partial:index.partial.html -->
+      <ul class="slides">
+        <input type="radio" id="control-1" name="control" checked>
+        <input type="radio" id="control-2" name="control">
+        <input type="radio" id="control-3" name="control">
+  
+        <!--  Left/Right Button  -->
+        <div class="navigator slide-1">
+          <label for="control-3">
+            <i class="fas fa-chevron-left"></i>
+          </label>
+          <label for="control-2">
+            <i class="fas fa-chevron-right"></i>
+          </label>
+        </div>
+  
+        <div class="navigator slide-2">
+          <label for="control-1">
+            <i class="fas fa-chevron-left"></i>
+          </label>
+          <label for="control-3">
+            <i class="fas fa-chevron-right"></i>
+          </label>
+        </div>
+  
+        <div class="navigator slide-3">
+          <label for="control-2">
+            <i class="fas fa-chevron-left"></i>
+          </label>
+          <label for="control-1">
+            <i class="fas fa-chevron-right"></i>
+          </label>
+        </div>
+        <!--  /Left/Right Button  -->
+  
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+  
+        <div class="controls-visible">
+          <label for="control-1"></label>
+          <label for="control-2"></label>
+          <label for="control-3"></label>
+        </div>
+      </ul>
+      <!-- partial -->
+      </div>
+
+      
+
+    </div>
+  </div>
+
+  <div id="bt4">
+    <div class="info">
+      <h2>聯絡資訊</h2>
+      <div class="gat">
+        <div class="gmap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14725.468639945599!2d120.304254!3d22.677372!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe34adc03dedea483!2z5bCP5qi55YuV54mp6Yar6ZmiLeW3pueHn-WLleeJqemGq-mZouaOqOiWpnzlv4Poh5_lsIjmpa3li5XnianphqvpmaJ85YuV54mp6Yar6ZmifOeNuOmGq-aOqOiWpnzlr7XnianphqvpmaJ855y856eR5bCI5qWt5YuV54mp6Yar6Zmi!5e0!3m2!1szh-TW!2stw!4v1643718192584!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="text">
+          <ul>
+            <li>小樹動物醫院｜高雄市左營區孟子路583號｜07-341-2291</li>
+            <li>周一至周日 上午 09:00-14:00 下午 15:00-21:00｜周二休診</li>
+          </ul>
+          <div class="icon">
+            <a href="#"><img src="images/fb.png" alt="fb"></a>
+            <a href="#"><img src="images/line.png" alt="line"></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">copyright &copy; 2022 小樹動物醫院 </div>
+  </div>
+</div>
+</body>
+</html>
